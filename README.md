@@ -16,13 +16,20 @@ This initial phase was critical for ensuring the accuracy and validity of all su
 
 ### 1.1. Initial Inspection & Missing Value Strategy
 The dataset contained 201 rows. An initial inspection revealed 4 cells with missing values across both categorical (`Region`) and numerical (`Average_Monthly_Income`) columns, which required a strategic approach to handle.
+<img width="289" height="431" alt="image" src="https://github.com/user-attachments/assets/a28ef6ff-8ea2-469e-96a2-98c821d3defb" />
+<img width="298" height="426" alt="image" src="https://github.com/user-attachments/assets/272e47b2-3233-4f96-ae44-4ed203f3a39c" />
+
 
 ### 1.2. Handling Categorical Missing Data (`Region`)
 *   **Problem:** Two rows for the country "Mexico" were missing their `Region` designation.
 *   **Solution (Logical Imputation):** Instead of deleting these valuable rows, I performed a **logical lookup**. By filtering for other "Mexico" entries, I confidently identified their region as **"North America"** and imputed the missing values, preserving data integrity.
+<img width="282" height="482" alt="image" src="https://github.com/user-attachments/assets/19660ab5-937f-4f19-9216-c3952a289ea3" />
+<img width="429" height="466" alt="image" src="https://github.com/user-attachments/assets/e44bf8ed-f6f7-43bf-bf6e-1347fce37dd0" />
 
 ### 1.3. Handling Numerical Missing Data (`Average_Monthly_Income`)
 *   **Problem:** One row for "Australia" and one for "Mexico" were missing their `Average_Monthly_Income` values.
+    <img width="428" height="50" alt="image" src="https://github.com/user-attachments/assets/e78d040c-5a1d-4b72-b53a-c835c2719710" />
+
 *   **Solution (Grouped Median Imputation):** A simple global mean would be statistically inaccurate. I chose a more robust method: **Grouped Median Imputation**. The plan was to fill each missing value with the median income of its corresponding region ("Oceania" for Australia, "North America" for Mexico).
 *   **Challenge:** Executing this plan revealed significant software limitations, which became a problem-solving exercise in itself (detailed in Section 3).
 
@@ -44,16 +51,23 @@ A PivotTable was used to aggregate the average income and cost of living by geog
 
 **Chart 1: Average Monthly Income vs. Average Cost of Living by Region**
 
-[<img width="279" height="141" alt="image" src="https://github.com/user-attachments/assets/e7ba60e1-878a-4da4-9026-b943b9701551" />
-]
+<img width="279" height="141" alt="image" src="https://github.com/user-attachments/assets/e7ba60e1-878a-4da4-9026-b943b9701551" />
+
 <img width="560" height="252" alt="image" src="https://github.com/user-attachments/assets/eb7af988-4dd3-4e82-803e-f0ae1a107791" />
 
 
 **Analysis:**
-The chart reveals a clear economic hierarchy among the continents. **Europe** emerges as the leader with the highest average monthly income (approx. $4,477), followed by Africa and Oceania. This visualization immediately highlights the significant economic disparities that exist on a global scale.
+A surprising finding is that **Africa** reports the highest average monthly income (approx. $4,695), slightly ahead of Oceania and Europe. 
+
+However, the more critical story lies in the **"gap"** between income and cost.
+*   **Europe** exhibits the **largest positive gap**, meaning its income significantly surpasses its living costs. This indicates strong real purchasing power.
+*   In contrast, regions like **Africa and Oceania**, despite high incomes, also face high costs, resulting in a tighter financial margin.
+*   The most striking case is **North America**, where income and cost are nearly identical, indicating almost zero financial leeway for the average person.
 
 **Business Implication:**
-This finding confirms that a one-size-fits-all business strategy is unviable. Pricing models, marketing campaigns, and product positioning must be hyper-localized. A premium product strategy that thrives in Europe might fail in regions with lower income thresholds. Market entry decisions must be heavily informed by these regional economic realities.
+This analysis proves that looking at gross income alone is insufficient.
+*   **Opportunity:** Europe stands out as the most promising market for premium goods and services because its consumers have the highest potential disposable income.
+*   **Challenge:** North America, while seemingly an affluent market, is extremely price-sensitive. Businesses should focus on value-driven strategies rather than luxury positioning. The tight financial situation of its consumers is a critical factor for market entry and product strategy.
 
 ---
 
@@ -63,8 +77,8 @@ High income is an incomplete metric; it is the **disposable income (Income - Cos
 
 **Chart 2: Average Disposable Income by Country (Income - Cost)**
 
-[<img width="557" height="290" alt="image" src="https://github.com/user-attachments/assets/fe7e6ccd-2bc8-44c8-babb-41ebb73c7e32" />
-]
+<img width="557" height="290" alt="image" src="https://github.com/user-attachments/assets/fe7e6ccd-2bc8-44c8-babb-41ebb73c7e32" />
+
 
 **Analysis:**
 This chart tells a surprising story that reframes the previous insight. While Europe has high gross incomes, it is **Germany and France** that truly excel, boasting the highest disposable incomes (over $1,000 left over monthly).
