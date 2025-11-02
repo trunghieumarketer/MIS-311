@@ -16,9 +16,9 @@ This initial phase was critical for ensuring the accuracy and validity of all su
 
 ### 1.1. Initial Inspection & Missing Value Strategy
 The dataset contained 201 rows. An initial inspection revealed 4 cells with missing values across both categorical (`Region`) and numerical (`Average_Monthly_Income`) columns, which required a strategic approach to handle.
+
 <img width="289" height="431" alt="image" src="https://github.com/user-attachments/assets/a28ef6ff-8ea2-469e-96a2-98c821d3defb" />
 <img width="298" height="426" alt="image" src="https://github.com/user-attachments/assets/272e47b2-3233-4f96-ae44-4ed203f3a39c" />
-
 
 ### 1.2. Handling Categorical Missing Data (`Region`)
 *   **Problem:** Two rows for the country "Mexico" were missing their `Region` designation.
@@ -35,7 +35,8 @@ The dataset contained 201 rows. An initial inspection revealed 4 cells with miss
 
 ### 1.4. Handling Duplicate Rows
 *   A final check for complete duplicate entries was performed using Excel's "Remove Duplicates" function.
-*   **Result:** 
+    <img width="282" height="482" alt="image" src="https://github.com/user-attachments/assets/9aef7229-18de-4835-a6c9-a6a92b006dfd" />
+    <img width="254" height="223" alt="image" src="https://github.com/user-attachments/assets/c00f3694-ec48-4317-a7b5-cd5ee62fb02c" />
 
 ---
 
@@ -101,14 +102,18 @@ My version of Excel for Mac does not include `Median` as a standard aggregation 
 
 **Proof: Missing 'Median' in PivotTable Menu**
 
-[!!! CHÈN ẢNH CHỤP MÀN HÌNH MENU PIVOTTABLE KHÔNG CÓ 'MEDIAN' !!!]
+<img width="339" height="364" alt="image" src="https://github.com/user-attachments/assets/e415a801-c98a-4f0c-851d-441ea5209257" />
+<img width="332" height="357" alt="image" src="https://github.com/user-attachments/assets/283f3d85-f897-4e57-95d5-a96a85ce9bca" />
+
+
 
 ### Barrier 2: No "Add to Data Model" Feature
 Plan B was to use the "Add to Data Model" feature, which often unlocks advanced DAX calculations like `MEDIANX`. This feature is completely absent from my Excel for Mac instance.
 
 **Proof: Missing 'Add to Data Model' Checkbox**
 
-[!!! CHÈN ẢNH CHỤP MÀN HÌNH HỘP THOẠI 'CREATE PIVOTTABLE' KHÔNG CÓ CHECKBOX !!!]
+<img width="485" height="361" alt="image" src="https://github.com/user-attachments/assets/37419bf4-bff9-48a9-aeb8-0cad310426cf" />
+
 
 ### Barrier 3: No `MEDIANIFS` Function
 Plan C involved a direct formula, `=MEDIANIFS(...)`. However, my version of Excel does not support this function, returning a `#NAME?` error.
