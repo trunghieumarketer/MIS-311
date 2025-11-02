@@ -80,6 +80,8 @@ High income is an incomplete metric; it is the **disposable income (Income - Cos
 
 
 **Chart 2: Average Disposable Income by Country (Income - Cost)**
+
+
 <img width="303" height="672" alt="image" src="https://github.com/user-attachments/assets/7747d2ae-9e6a-4429-9ff9-a36b9a650bd6" />
 <img width="230" height="325" alt="image" src="https://github.com/user-attachments/assets/c74f7be4-feb7-49d1-888a-1154cb7640bb" />
 
