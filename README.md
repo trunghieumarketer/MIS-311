@@ -28,7 +28,7 @@ The dataset contained 201 rows. An initial inspection revealed 4 cells with miss
 
 ### 1.4. Handling Duplicate Rows
 *   A final check for complete duplicate entries was performed using Excel's "Remove Duplicates" function.
-*   **Result:** No complete duplicate rows were found in the dataset, confirming the uniqueness of each entry.
+*   **Result:** 
 
 ---
 
@@ -44,7 +44,10 @@ A PivotTable was used to aggregate the average income and cost of living by geog
 
 **Chart 1: Average Monthly Income vs. Average Cost of Living by Region**
 
-[!!! CHÈN ẢNH BIỂU ĐỒ CỘT NHÓM VÀO ĐÂY !!!]
+[<img width="279" height="141" alt="image" src="https://github.com/user-attachments/assets/e7ba60e1-878a-4da4-9026-b943b9701551" />
+]
+<img width="560" height="252" alt="image" src="https://github.com/user-attachments/assets/eb7af988-4dd3-4e82-803e-f0ae1a107791" />
+
 
 **Analysis:**
 The chart reveals a clear economic hierarchy among the continents. **Europe** emerges as the leader with the highest average monthly income (approx. $4,477), followed by Africa and Oceania. This visualization immediately highlights the significant economic disparities that exist on a global scale.
@@ -60,7 +63,8 @@ High income is an incomplete metric; it is the **disposable income (Income - Cos
 
 **Chart 2: Average Disposable Income by Country (Income - Cost)**
 
-[!!! CHÈN ẢNH BIỂU ĐỒ CỘT THU NHẬP KHẢ DỤNG VÀO ĐÂY !!!]
+[<img width="557" height="290" alt="image" src="https://github.com/user-attachments/assets/fe7e6ccd-2bc8-44c8-babb-41ebb73c7e32" />
+]
 
 **Analysis:**
 This chart tells a surprising story that reframes the previous insight. While Europe has high gross incomes, it is **Germany and France** that truly excel, boasting the highest disposable incomes (over $1,000 left over monthly).
