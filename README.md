@@ -75,8 +75,13 @@ This analysis proves that looking at gross income alone is insufficient.
 ### Insight 2: Disposable Income, Not Total Income, Reveals True Purchasing Power
 
 High income is an incomplete metric; it is the **disposable income (Income - Cost)** that truly measures a population's financial well-being and purchasing power. A second analysis was performed to calculate and visualize this critical metric.
+<img width="637" height="409" alt="image" src="https://github.com/user-attachments/assets/d9ae5022-44f4-4edc-b9f6-3aa2d38e9fc0" />
+<img width="764" height="101" alt="image" src="https://github.com/user-attachments/assets/5fce5c78-c0ca-45db-9dda-49daf2fa16b6" />
+
 
 **Chart 2: Average Disposable Income by Country (Income - Cost)**
+<img width="303" height="672" alt="image" src="https://github.com/user-attachments/assets/7747d2ae-9e6a-4429-9ff9-a36b9a650bd6" />
+<img width="230" height="325" alt="image" src="https://github.com/user-attachments/assets/c74f7be4-feb7-49d1-888a-1154cb7640bb" />
 
 <img width="557" height="290" alt="image" src="https://github.com/user-attachments/assets/fe7e6ccd-2bc8-44c8-babb-41ebb73c7e32" />
 
